@@ -3696,18 +3696,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "unique_company_id_name",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "name"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -3792,29 +3780,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_article_variations_article_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "article_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_article_variations_talla_color",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "talla",
-                "color"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_article_variations_article_id",
               "type": "key",
@@ -3987,39 +3952,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_articles_talla",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "talla"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_articles_color",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "color"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_articles_tipo_producto",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "tipo_producto"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -4058,17 +3990,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_colors_name",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "name"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_colors_name",
               "type": "key",
@@ -4296,17 +4217,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_delivery_note_items_variation_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "variation_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_delivery_note_items_variation_id",
               "type": "key",
@@ -4615,18 +4525,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "unique_resource_action",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "resource",
-                "action"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -4900,17 +4798,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_planilla_items_planilla_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "planilla_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -4982,28 +4869,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_planillas_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_planillas_codigo",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "codigo"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_planillas_company_id",
               "type": "key",
@@ -5108,28 +4973,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_prestashop_configurations_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "unique_company_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_prestashop_configurations_company_id",
               "type": "key",
@@ -5276,54 +5119,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_prestashop_product_mappings_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_prestashop_product_mappings_article_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "article_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "unique_company_id_article_id_variation_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "article_id",
-                "variation_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "unique_company_id_prestashop_product_id_prestashop_combination_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "prestashop_product_id",
-                "prestashop_combination_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -5397,17 +5192,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_prestashop_sync_logs_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_prestashop_sync_logs_company_id",
               "type": "key",
@@ -5507,29 +5291,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_prestashop_sync_queue_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_prestashop_sync_queue_status",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "status",
-                "scheduled_at"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_prestashop_sync_queue_company_id",
               "type": "key",
@@ -5665,18 +5426,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "unique_company_id_number",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "number"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -5774,28 +5523,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_presupuestos_n_items_presupuesto_n_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "presupuesto_n_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_presupuestos_n_items_article_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "article_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -5859,17 +5586,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_quote_items_variation_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "variation_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_quote_items_variation_id",
               "type": "key",
@@ -6065,40 +5781,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_role_permissions_role_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "role_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_role_permissions_permission_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "permission_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "unique_role_id_permission_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "role_id",
-                "permission_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -6224,28 +5906,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_sale_items_sale_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "sale_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_sale_items_variation_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "variation_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_sale_items_sale_id",
               "type": "key",
@@ -6397,39 +6057,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_sales_created_at",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "created_at"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_sales_ticket_number",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "ticket_number"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_sales_status",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "status"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_sales_created_at",
               "type": "key",
@@ -6738,18 +6365,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "unique_company_id_setting_key",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "setting_key"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -6801,17 +6416,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "unique_user_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "user_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "unique_user_id",
               "type": "unique",
@@ -6925,52 +6529,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_user_company_roles_user_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "user_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_user_company_roles_company_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_user_company_roles_role_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "role_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "unique_user_id_company_id_role_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "user_id",
-                "company_id",
-                "role_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -7023,19 +6581,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "unique_user_id_company_id_permission_id",
-              "type": "unique",
-              "status": "available",
-              "columns": [
-                "user_id",
-                "company_id",
-                "permission_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "unique_user_id_company_id_permission_id",
               "type": "unique",
@@ -7334,28 +6879,6 @@
               "orders": [
                 "ASC"
               ]
-            },
-            {
-              "key": "idx_verifactu_logs_invoice_id",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "invoice_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_verifactu_logs_created_at",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "created_at"
-              ],
-              "orders": [
-                "ASC"
-              ]
             }
           ]
         },
@@ -7459,40 +6982,6 @@
             }
           ],
           "indexes": [
-            {
-              "key": "idx_verifactu_queue_company_status",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "company_id",
-                "status"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_verifactu_queue_next_retry",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "next_retry_at"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
-            {
-              "key": "idx_verifactu_queue_invoice",
-              "type": "key",
-              "status": "available",
-              "columns": [
-                "invoice_id"
-              ],
-              "orders": [
-                "ASC"
-              ]
-            },
             {
               "key": "idx_verifactu_queue_company_status",
               "type": "key",
