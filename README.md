@@ -1,6 +1,4 @@
-## How can I edit this code?
 
-There are several ways of editing your application.
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
@@ -45,3 +43,5 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+
+
