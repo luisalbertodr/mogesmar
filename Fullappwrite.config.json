@@ -191,7 +191,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Empresas",
                     "enabled": true,
                     "rowSecurity": true,
@@ -293,7 +293,7 @@
                         "update(\"any\")",
                         "delete(\"any\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Clientes",
                     "enabled": true,
                     "rowSecurity": false,
@@ -561,7 +561,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Configuracion",
                     "enabled": true,
                     "rowSecurity": false,
@@ -830,7 +830,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Empleados",
                     "enabled": true,
                     "rowSecurity": false,
@@ -956,7 +956,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Familias",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1020,7 +1020,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Articulos",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1149,7 +1149,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Citas",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1301,7 +1301,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Facturas",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1504,7 +1504,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "bonos_cliente",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1667,7 +1667,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Recursos",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1752,7 +1752,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Proveedores",
                     "enabled": true,
                     "rowSecurity": false,
@@ -1886,7 +1886,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Aparatos",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2000,7 +2000,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "plantillas_documentos",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2173,7 +2173,7 @@
                     "$permissions": [
                         "read(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "auditoria",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2326,7 +2326,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "notificaciones",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2496,7 +2496,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Message_Logs",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2601,7 +2601,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Templates",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2635,7 +2635,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Campaigns",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2761,7 +2761,7 @@
                         "update(\"any\")",
                         "delete(\"any\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Import_Logs",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2891,7 +2891,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Campaign_Progress",
                     "enabled": true,
                     "rowSecurity": false,
@@ -2986,7 +2986,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "sesiones_clinicas",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3158,7 +3158,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "permisos",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3316,7 +3316,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "usuario_empresas",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3378,7 +3378,7 @@
                         "read(\"users\")",
                         "update(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Migration Logs",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3479,7 +3479,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Agenda Appointments",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3567,7 +3567,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Agenda Employees",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3625,7 +3625,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Article Families",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3677,7 +3677,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Article Variations",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3753,7 +3753,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Articles",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3859,7 +3859,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Colors",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3893,7 +3893,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Customer Contacts",
                     "enabled": true,
                     "rowSecurity": false,
@@ -3963,7 +3963,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Customer Shipping Addresses",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4045,7 +4045,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Delivery Note Items",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4091,7 +4091,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Delivery Notes",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4167,7 +4167,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Document Categories",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4213,7 +4213,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Documents",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4301,7 +4301,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Permissions",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4353,7 +4353,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Planilla Items",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4609,7 +4609,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Planillas",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4673,7 +4673,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Prestashop Configurations",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4749,7 +4749,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Prestashop Product Mappings",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4819,7 +4819,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Prestashop Sync Logs",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4883,7 +4883,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Prestashop Sync Queue",
                     "enabled": true,
                     "rowSecurity": false,
@@ -4965,7 +4965,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Presupuestos N",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5059,7 +5059,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Presupuestos N Items",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5129,7 +5129,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Quote Items",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5187,7 +5187,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Quotes",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5287,7 +5287,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Role Permissions",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5327,7 +5327,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Roles",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5379,7 +5379,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Sale Items",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5443,7 +5443,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Sales",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5561,7 +5561,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Superusers",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5625,7 +5625,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Suppliers",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5737,7 +5737,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "System Settings",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5801,7 +5801,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "User Appearance Preferences",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5848,7 +5848,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "User Company Roles",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5900,7 +5900,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "User Permissions",
                     "enabled": true,
                     "rowSecurity": false,
@@ -5946,7 +5946,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Verifactu Certificates",
                     "enabled": true,
                     "rowSecurity": false,
@@ -6022,7 +6022,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Verifactu Company Config",
                     "enabled": true,
                     "rowSecurity": false,
@@ -6116,7 +6116,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Verifactu Logs",
                     "enabled": true,
                     "rowSecurity": false,
@@ -6186,7 +6186,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Verifactu Queue",
                     "enabled": true,
                     "rowSecurity": false,
@@ -6280,7 +6280,7 @@
                         "update(\"users\")",
                         "delete(\"users\")"
                     ],
-                    "databaseId": "68b1d7530028045d94d3",
+                    "databaseId": "mogesmar",
                     "name": "Verifactu Xml Documents",
                     "enabled": true,
                     "rowSecurity": false,
