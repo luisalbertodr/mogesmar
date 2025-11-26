@@ -1,0 +1,349 @@
+
+> vite_react_shadcn_ts@0.0.0 lint
+> eslint .
+
+
+C:\Users\OportoW11\AppwriteLovable\CitaForm_backup.tsx
+  1:0  error  Parsing error: File appears to be binary
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\AuthForm.tsx
+   9:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  36:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\CampaignsTab.tsx
+  300:114  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\badge.tsx
+  29:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\button.tsx
+  47:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\form.tsx
+  129:10  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\navigation-menu.tsx
+  111:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\sidebar.tsx
+  636:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\sonner.tsx
+  27:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\components\ui\toggle.tsx
+  37:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\lib\appwrite_schema.ts
+  105:76  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\pages\Configuracion.tsx
+  86:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\pages\Index.tsx
+  10:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\src\types\index.ts
+  33:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\sites\appwrite-wa-reach\tailwind.config.ts
+  90:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\AuthForm.tsx
+   9:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  40:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\CampaignsTab.tsx
+  204:6    warning  React Hook useEffect has a missing dependency: 'forceFailCampaign'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  370:114  error    Unexpected any. Specify a different type                                                                              @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\badge.tsx
+  29:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\button.tsx
+  47:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\form.tsx
+  129:10  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\navigation-menu.tsx
+  111:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\sidebar.tsx
+  636:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\sonner.tsx
+  27:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\components\ui\toggle.tsx
+  37:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\lib\appwrite_schema.ts
+  105:76  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\pages\Configuracion.tsx
+   66:39  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  145:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\pages\Index.tsx
+  10:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\src\types\index.ts
+  33:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\Wasap\tailwind.config.ts
+  90:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\AuthForm.tsx
+   9:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  36:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\CampaignsTab.tsx
+  300:114  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\badge.tsx
+  29:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\button.tsx
+  47:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\form.tsx
+  129:10  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\navigation-menu.tsx
+  111:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\sidebar.tsx
+  636:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\sonner.tsx
+  27:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\components\ui\toggle.tsx
+  37:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\lib\appwrite_schema.ts
+  105:76  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\pages\Configuracion.tsx
+  86:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\pages\Index.tsx
+  10:50  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  32:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\src\types\index.ts
+  33:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\sites\appwrite-wa-reach\tailwind.config.ts
+  90:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\OportoW11\AppwriteLovable\src\components\AuthForm.tsx
+   9:51  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  23:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  37:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\CampaignsTab.tsx
+  174:39  error  React Hook "useAppwriteCollection" is called in function "viewLogs" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use"  react-hooks/rules-of-hooks
+
+C:\Users\OportoW11\AppwriteLovable\src\components\FamiliasTab.tsx
+  52:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\MarketingClientesTab.tsx
+  210:6    warning  React Hook useEffect has a missing dependency: 'forceFailCampaign'. Either include it or remove the dependency array  react-hooks/exhaustive-deps
+  376:114  error    Unexpected any. Specify a different type                                                                              @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\MigrationSection.tsx
+  18:54  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\bonos\BonoCard.tsx
+  146:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  164:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\bonos\BonoSelector.tsx
+  45:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\clinicos\FormularioSesionActual.tsx
+   40:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+   78:56  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  122:33  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  238:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\clinicos\HistorialComprasTab.tsx
+  135:52  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\clinicos\SesionesClinicasTab.tsx
+  142:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\components\forms\CitaForm.tsx
+  168:37  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  168:74  error    Unexpected any. Specify a different type                                                                                                  @typescript-eslint/no-explicit-any
+  230:6   warning  React Hook useEffect has a missing dependency: 'form'. Either include it or remove the dependency array                                   react-hooks/exhaustive-deps
+  230:7   warning  React Hook useEffect has a complex expression in the dependency array. Extract it to a separate variable so it can be statically checked  react-hooks/exhaustive-deps
+
+C:\Users\OportoW11\AppwriteLovable\src\components\theme-provider.tsx
+  66:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\badge.tsx
+  29:17  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\button.tsx
+  47:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\command.tsx
+  24:11  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\form.tsx
+  129:10  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\navigation-menu.tsx
+  111:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\sidebar.tsx
+  612:3  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\sonner.tsx
+  27:19  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+C:\Users\OportoW11\AppwriteLovable\src\components\ui\toggle.tsx
+  37:18  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\contexts\EmpresaContext.tsx
+  232:14  warning  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+C:\Users\OportoW11\AppwriteLovable\src\hooks\useAuditoria.ts
+  114:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  144:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  191:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  192:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  239:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\hooks\useFamilias.ts
+  43:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  71:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  96:22  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\hooks\usePlantillasDocumentos.ts
+  238:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  325:69  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  332:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\lib\appwrite.ts
+  7:1  error  Irregular whitespace not allowed  no-irregular-whitespace
+  8:1  error  Irregular whitespace not allowed  no-irregular-whitespace
+
+C:\Users\OportoW11\AppwriteLovable\src\pages\Articulos.tsx
+  66:37  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\pages\Configuracion.tsx
+  311:43  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  336:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  361:44  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\pages\agenda\AgendaCalendar.tsx
+  49:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-aparatos.ts
+  25:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-auditoria.ts
+  141:68  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  142:72  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  194:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  226:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  227:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  260:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-clientes.ts
+  24:38  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-configuration.ts
+  38:55  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  60:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-empleados.ts
+  24:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  50:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-empresas.ts
+   43:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  102:27  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  123:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  130:19  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  157:21  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-facturas.ts
+  65:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  78:23  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-notificaciones.ts
+   64:35  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  149:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  158:25  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-permisos.ts
+  170:17  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-plantillas-documentos.ts
+  185:17  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  264:25  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  273:28  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  368:69  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  371:34  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  383:25  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  391:28  error  Unexpected any. Specify a different type      @typescript-eslint/no-explicit-any
+  402:13  error  Unexpected lexical declaration in case block  no-case-declarations
+  415:13  error  Unexpected lexical declaration in case block  no-case-declarations
+  422:13  error  Unexpected lexical declaration in case block  no-case-declarations
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-proveedores.ts
+  25:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  46:28  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-recursos.ts
+  25:24  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  57:26  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\services\appwrite-sesiones-clinicas.ts
+  223:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  232:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\types\articulo.types.ts
+  17:13  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\src\types\factura.types.ts
+  12:16  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\OportoW11\AppwriteLovable\tailwind.config.ts
+  90:13  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+Γ£û 154 problems (120 errors, 34 warnings)
+
