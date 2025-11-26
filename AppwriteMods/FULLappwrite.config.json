@@ -1,6 +1,6 @@
 {
-    "projectId": "mogemar",
-    "projectName": "MogeMar",
+    "projectId": "mogesmar",
+    "projectName": "MOGESMAR",
     "settings": {
         "services": {
             "account": true,
@@ -179,8 +179,8 @@
     ],
     "tablesDB": [
         {
-            "$id": "68b1d7530028045d94d3",
-            "name": "Lipoout",
+            "$id": "mogesmar",
+            "name": "mogesmar",
             "enabled": true,
             "collections": [
                 {
