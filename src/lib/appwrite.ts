@@ -15,7 +15,10 @@ export const PROJECT_ID = import.meta.env.VITE_APP_PROJECT_ID;
 
 // === IDS BASE DE DATOS ===
 // Base de datos unificada Lipoout (incluye funcionalidad WAHA y gestión de clínica)
-export const DATABASE_ID = '68b1d7530028045d94d3'; // Lipoout Database
+// Prefer env variables (Vite) but keep the original literal as fallback for older setups
+export const DATABASE_ID = (
+	import.meta.env.VITE_APP_DATABASE_ID || import.meta.env.VITE_APPWRITE_DATABASE_ID || '68b1d7530028045d94d3'
+) as string; // Lipoout Database
 
 // Colecciones consolidadas
 export const CLIENTS_COLLECTION_ID = 'clientes';

@@ -14,7 +14,7 @@ export interface Configuracion {
 
   nombreClinica: string;
   direccion: string;
-  cif2: string;
+  nif: string;
   emailContacto: string;
   telefonoContacto: string;
   serieFactura: string;

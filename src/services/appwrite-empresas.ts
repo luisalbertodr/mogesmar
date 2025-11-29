@@ -24,15 +24,15 @@ export const getEmpresas = async (): Promise<(Empresa & Models.Document)[]> => {
 // CREAR una nueva empresa
 export const createEmpresa = async (newEmpresa: CreateEmpresaInput) => {
   try {
-    // Verificar si ya existe una empresa con el mismo CIF
+    // Verificar si ya existe una empresa con el mismo NIF
     const empresasExistentes = await databases.listDocuments<Empresa & Models.Document>(
       DATABASE_ID,
       EMPRESAS_COLLECTION_ID,
-      [Query.equal('cif2', newEmpresa.cif2)]
+      [Query.equal('nif', newEmpresa.nif)]
     );
 
     if (empresasExistentes.documents.length > 0) {
-      throw new Error(`Ya existe una empresa con el CIF/NIF: ${newEmpresa.cif2}`);
+      throw new Error(`Ya existe una empresa con el NIF: ${newEmpresa.nif}`);
     }
 
     // Generar un configuracion_id único usando timestamp + ID único
@@ -43,7 +43,7 @@ export const createEmpresa = async (newEmpresa: CreateEmpresaInput) => {
     const dataToSend: Partial<Empresa> = {
       nombre: newEmpresa.nombre,
       nombre_legal: newEmpresa.nombre_legal,
-      cif2: newEmpresa.cif2,
+      nif: newEmpresa.nif,
       activa: newEmpresa.activa,
       configuracion_id: configuracionId,
     };
@@ -77,7 +77,7 @@ export const createEmpresa = async (newEmpresa: CreateEmpresaInput) => {
           empresa_id: empresaCreada.$id,
           nombreClinica: newEmpresa.nombre,
           direccion: '',
-          cif2: newEmpresa.cif2,
+          nif: newEmpresa.nif,
           emailContacto: newEmpresa.email || '',
           telefonoContacto: '',
           serieFactura: 'FRA',
@@ -134,7 +134,7 @@ export const createEmpresa = async (newEmpresa: CreateEmpresaInput) => {
     const err = error as { code?: number; message?: string };
 
     if (err.code === 409 || err.message?.includes('unique')) {
-      throw new Error(`Ya existe una empresa con el CIF/NIF: ${newEmpresa.cif2}`);
+      throw new Error(`Ya existe una empresa con el NIF: ${newEmpresa.nif}`);
     }
     if (err.code === 400) {
       if (err.message?.includes('Unknown attribute')) {
@@ -160,7 +160,7 @@ export const updateEmpresa = ({ id, data }: { id: string, data: UpdateEmpresaInp
 
   if (data.nombre !== undefined) dataToSend.nombre = data.nombre;
   if (data.nombre_legal !== undefined) dataToSend.nombre_legal = data.nombre_legal;
-  if (data.cif2 !== undefined) dataToSend.cif2 = data.cif2;
+  if (data.nif !== undefined) dataToSend.nif = data.nif;
   if (data.activa !== undefined) dataToSend.activa = data.activa;
   if (data.email !== undefined && data.email && data.email.trim() !== '') {
     dataToSend.email = data.email.trim();

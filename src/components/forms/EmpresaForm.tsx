@@ -31,7 +31,7 @@ export const EmpresaForm = ({ empresaInicial, onSubmit, isSubmitting }: EmpresaF
   const defaultValues: EmpresaFormData = {
     nombre: empresaInicial?.nombre || '',
     nombre_legal: empresaInicial?.nombre_legal || '',
-    cif2: empresaInicial?.cif2 || '',
+    nif: empresaInicial?.nif || '',
     telefono: empresaInicial?.telefono || '',
     email: empresaInicial?.email || '',
     activa: empresaInicial?.activa ?? true,
@@ -47,7 +47,7 @@ export const EmpresaForm = ({ empresaInicial, onSubmit, isSubmitting }: EmpresaF
     const dataToSend: EmpresaInput = {
       nombre: data.nombre,
       nombre_legal: data.nombre_legal,
-      cif2: data.cif2,
+      nif: data.nif,
       // FIX 1: Asegurar que el campo opcional 'telefono' se omita (undefined) si está vacío ('')
       // El .trim() en Zod ya limpió cualquier espacio en blanco.
       telefono: data.telefono || undefined, 
@@ -62,7 +62,7 @@ export const EmpresaForm = ({ empresaInicial, onSubmit, isSubmitting }: EmpresaF
       <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-4 pt-4">
         <FormField control={form.control} name="nombre" render={({ field }) => ( <FormItem> <FormLabel>Nombre Comercial *</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
         <FormField control={form.control} name="nombre_legal" render={({ field }) => ( <FormItem> <FormLabel>Razón Social *</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
-        <FormField control={form.control} name="cif2" render={({ field }) => ( <FormItem> <FormLabel>NIF/CIF *</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
+        <FormField control={form.control} name="nif" render={({ field }) => ( <FormItem> <FormLabel>NIF/CIF *</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
         <FormField control={form.control} name="email" render={({ field }) => ( <FormItem> <FormLabel>Email Contacto</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
         <FormField control={form.control} name="telefono" render={({ field }) => ( <FormItem> <FormLabel>Teléfono</FormLabel> <FormControl><Input {...field} /></FormControl> <FormMessage /> </FormItem> )}/>
         
