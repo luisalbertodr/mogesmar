@@ -946,30 +946,7 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "familias",
@@ -1751,7 +1728,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_recursos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1885,7 +1862,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_proveedores_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1999,7 +1976,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_aparatos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -3406,30 +3383,7 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "migration_logs",
@@ -3531,41 +3485,7 @@
           "size": 255
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_started_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "started_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_completed_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "completed_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status2",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status2"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_appointments",
@@ -3662,52 +3582,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_employee_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "employee_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_appointment_date",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "appointment_date"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_start_time",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "start_time"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_employees",
@@ -3769,30 +3644,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_families",
@@ -3848,19 +3700,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_variations",
@@ -3948,7 +3788,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_article_id",
+          "key": "idx_article_variations_article_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -3959,7 +3799,7 @@
           ]
         },
         {
-          "key": "idx_talla_color",
+          "key": "idx_article_variations_talla_color",
           "type": "key",
           "status": "available",
           "columns": [
@@ -3972,7 +3812,7 @@
           ]
         },
         {
-          "key": "idx_codigo_barras",
+          "key": "idx_article_variations_codigo_barras",
           "type": "key",
           "status": "available",
           "columns": [
@@ -3983,7 +3823,7 @@
           ]
         },
         {
-          "key": "idx_estado",
+          "key": "idx_article_variations_estado",
           "type": "key",
           "status": "available",
           "columns": [
@@ -3994,11 +3834,11 @@
           ]
         },
         {
-          "key": "idx_precio",
+          "key": "idx_article_variations_precio_compra",
           "type": "key",
           "status": "available",
           "columns": [
-            "precio"
+            "precio_compra"
           ],
           "orders": [
             "ASC"
@@ -4126,7 +3966,41 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_articles_talla",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "talla"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_articles_color",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "color"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_articles_tipo_producto",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "tipo_producto"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "colors",
@@ -4164,7 +4038,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_name",
+          "key": "idx_colors_name",
           "type": "key",
           "status": "available",
           "columns": [
@@ -4250,30 +4124,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_primary",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_primary"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "customer_shipping_addresses",
@@ -4363,30 +4214,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_default",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_default"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "delivery_note_items",
@@ -4437,7 +4265,19 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_delivery_note_items_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "delivery_notes",
@@ -4519,41 +4359,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "document_categories",
@@ -4602,19 +4408,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "documents",
@@ -4713,41 +4507,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_uploaded_by",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "uploaded_by"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_category",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "category"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "permissions",
@@ -4804,30 +4564,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_resource",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "resource"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_action",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "action"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "planilla_items",
@@ -5155,7 +4892,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_planilla_id",
+          "key": "idx_planilla_items_planilla_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5236,7 +4973,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_planillas_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5247,7 +4984,7 @@
           ]
         },
         {
-          "key": "idx_codigo",
+          "key": "idx_planillas_codigo",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5342,7 +5079,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_prestashop_configurations_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5430,7 +5167,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_prestashop_product_mappings_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5441,7 +5178,7 @@
           ]
         },
         {
-          "key": "idx_article_id",
+          "key": "idx_prestashop_product_mappings_article_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5524,7 +5261,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_prestashop_sync_logs_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5629,7 +5366,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_prestashop_sync_queue_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5640,7 +5377,7 @@
           ]
         },
         {
-          "key": "idx_status",
+          "key": "idx_prestashop_sync_queue_status",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5758,41 +5495,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "presupuestos_n_items",
@@ -5874,7 +5577,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_presupuesto_n_id",
+          "key": "idx_presupuestos_n_items_presupuesto_n_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5885,7 +5588,7 @@
           ]
         },
         {
-          "key": "idx_article_id",
+          "key": "idx_presupuestos_n_items_article_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -5962,7 +5665,19 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_quote_items_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "quotes",
@@ -6075,52 +5790,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "role_permissions",
@@ -6165,7 +5835,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_role_id",
+          "key": "idx_role_permissions_role_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6176,7 +5846,7 @@
           ]
         },
         {
-          "key": "idx_permission_id",
+          "key": "idx_role_permissions_permission_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6317,11 +5987,22 @@
       ],
       "indexes": [
         {
-          "key": "idx_sale_id",
+          "key": "idx_sale_items_sale_id",
           "type": "key",
           "status": "available",
           "columns": [
             "sale_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_sale_items_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
           ],
           "orders": [
             "ASC"
@@ -6467,7 +6148,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_created_at",
+          "key": "idx_sales_created_at",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6478,7 +6159,7 @@
           ]
         },
         {
-          "key": "idx_ticket_number",
+          "key": "idx_sales_ticket_number",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6489,7 +6170,7 @@
           ]
         },
         {
-          "key": "idx_status",
+          "key": "idx_sales_status",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6567,30 +6248,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "suppliers",
@@ -6717,30 +6375,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "system_settings",
@@ -6809,30 +6444,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_setting_key",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "setting_key"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_appearance_preferences",
@@ -6881,19 +6493,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_company_roles",
@@ -6951,7 +6551,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_user_id",
+          "key": "idx_user_company_roles_user_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6962,7 +6562,7 @@
           ]
         },
         {
-          "key": "idx_company_id",
+          "key": "idx_user_company_roles_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -6973,7 +6573,7 @@
           ]
         },
         {
-          "key": "idx_role_id",
+          "key": "idx_user_company_roles_role_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7033,41 +6633,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_permission_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "permission_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_certificates",
@@ -7148,30 +6714,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_company_config",
@@ -7277,7 +6820,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_verifactu_company_config_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7367,7 +6910,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_invoice_id",
+          "key": "idx_verifactu_logs_invoice_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7378,7 +6921,7 @@
           ]
         },
         {
-          "key": "idx_created_at",
+          "key": "idx_verifactu_logs_created_at",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7495,7 +7038,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_status",
+          "key": "idx_verifactu_queue_company_status",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7508,7 +7051,7 @@
           ]
         },
         {
-          "key": "idx_next_retry",
+          "key": "idx_verifactu_queue_next_retry",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7519,7 +7062,7 @@
           ]
         },
         {
-          "key": "idx_invoice",
+          "key": "idx_verifactu_queue_invoice",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7530,7 +7073,7 @@
           ]
         },
         {
-          "key": "idx_company_id",
+          "key": "idx_verifactu_queue_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7541,7 +7084,7 @@
           ]
         },
         {
-          "key": "idx_invoice_id",
+          "key": "idx_verifactu_queue_invoice_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7617,7 +7160,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_company_id",
+          "key": "idx_verifactu_xml_documents_company_id",
           "type": "key",
           "status": "available",
           "columns": [
@@ -7628,7 +7171,7 @@
           ]
         },
         {
-          "key": "idx_invoice_id",
+          "key": "idx_verifactu_xml_documents_invoice_id",
           "type": "key",
           "status": "available",
           "columns": [

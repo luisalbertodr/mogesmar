@@ -187,12 +187,7 @@
   "tables": [
     {
       "$id": "empresas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Empresas",
       "enabled": true,
@@ -285,12 +280,7 @@
     },
     {
       "$id": "clientes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Clientes",
       "enabled": true,
@@ -554,12 +544,7 @@
     },
     {
       "$id": "configuracion",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Configuracion",
       "enabled": true,
@@ -823,12 +808,7 @@
     },
     {
       "$id": "empleados",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Empleados",
       "enabled": true,
@@ -946,39 +926,11 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "familias",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Familias",
       "enabled": true,
@@ -1037,12 +989,7 @@
     },
     {
       "$id": "articulos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Articulos",
       "enabled": true,
@@ -1167,12 +1114,7 @@
     },
     {
       "$id": "citas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Citas",
       "enabled": true,
@@ -1320,12 +1262,7 @@
     },
     {
       "$id": "facturas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Facturas",
       "enabled": true,
@@ -1525,12 +1462,7 @@
     },
     {
       "$id": "bonos_cliente",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "bonos_cliente",
       "enabled": true,
@@ -1688,12 +1620,7 @@
     },
     {
       "$id": "recursos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Recursos",
       "enabled": true,
@@ -1751,7 +1678,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_recursos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1774,12 +1701,7 @@
     },
     {
       "$id": "proveedores",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Proveedores",
       "enabled": true,
@@ -1885,7 +1807,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_proveedores_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1908,12 +1830,7 @@
     },
     {
       "$id": "aparatos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Aparatos",
       "enabled": true,
@@ -1999,7 +1916,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_aparatos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -2022,12 +1939,7 @@
     },
     {
       "$id": "plantillas_documentos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "plantillas_documentos",
       "enabled": true,
@@ -2199,12 +2111,7 @@
     },
     {
       "$id": "auditoria",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "auditoria",
       "enabled": true,
@@ -2352,12 +2259,7 @@
     },
     {
       "$id": "notificaciones",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "notificaciones",
       "enabled": true,
@@ -2525,12 +2427,7 @@
     },
     {
       "$id": "message_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Message_Logs",
       "enabled": true,
@@ -2631,12 +2528,7 @@
     },
     {
       "$id": "templates",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Templates",
       "enabled": true,
@@ -2665,12 +2557,7 @@
     },
     {
       "$id": "campaigns",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Campaigns",
       "enabled": true,
@@ -2788,12 +2675,7 @@
     },
     {
       "$id": "import_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Import_Logs",
       "enabled": true,
@@ -2919,12 +2801,7 @@
     },
     {
       "$id": "campaign_progress",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Campaign_Progress",
       "enabled": true,
@@ -3015,12 +2892,7 @@
     },
     {
       "$id": "sesiones_clinicas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "sesiones_clinicas",
       "enabled": true,
@@ -3187,12 +3059,7 @@
     },
     {
       "$id": "permisos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "permisos",
       "enabled": true,
@@ -3346,12 +3213,7 @@
     },
     {
       "$id": "usuario_empresas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "usuario_empresas",
       "enabled": true,
@@ -3406,39 +3268,11 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "migration_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Migration Logs",
       "enabled": true,
@@ -3531,50 +3365,11 @@
           "size": 255
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_started_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "started_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_completed_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "completed_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status2",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status2"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_appointments",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Agenda Appointments",
       "enabled": true,
@@ -3662,61 +3457,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_employee_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "employee_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_appointment_date",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "appointment_date"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_start_time",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "start_time"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_employees",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Agenda Employees",
       "enabled": true,
@@ -3769,39 +3514,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_families",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Article Families",
       "enabled": true,
@@ -3848,28 +3565,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_variations",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Article Variations",
       "enabled": true,
@@ -3946,74 +3646,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_talla_color",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "talla",
-            "color"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_codigo_barras",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "codigo_barras"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_estado",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "estado"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_precio",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "precio"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "articles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Articles",
       "enabled": true,
@@ -4130,12 +3767,7 @@
     },
     {
       "$id": "colors",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Colors",
       "enabled": true,
@@ -4162,28 +3794,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "customer_contacts",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Customer Contacts",
       "enabled": true,
@@ -4250,39 +3865,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_primary",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_primary"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "customer_shipping_addresses",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Customer Shipping Addresses",
       "enabled": true,
@@ -4363,39 +3950,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_default",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_default"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "delivery_note_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Delivery Note Items",
       "enabled": true,
@@ -4441,12 +4000,7 @@
     },
     {
       "$id": "delivery_notes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Delivery Notes",
       "enabled": true,
@@ -4519,50 +4073,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "document_categories",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Document Categories",
       "enabled": true,
@@ -4602,28 +4117,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "documents",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Documents",
       "enabled": true,
@@ -4713,50 +4211,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_uploaded_by",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "uploaded_by"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_category",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "category"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Permissions",
       "enabled": true,
@@ -4804,39 +4263,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_resource",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "resource"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_action",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "action"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "planilla_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Planilla Items",
       "enabled": true,
@@ -5153,28 +4584,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_planilla_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "planilla_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "planillas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Planillas",
       "enabled": true,
@@ -5234,39 +4648,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_codigo",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "codigo"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_configurations",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Configurations",
       "enabled": true,
@@ -5340,28 +4726,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_product_mappings",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Product Mappings",
       "enabled": true,
@@ -5428,39 +4797,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_sync_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Sync Logs",
       "enabled": true,
@@ -5522,28 +4863,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_sync_queue",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Sync Queue",
       "enabled": true,
@@ -5627,41 +4951,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status",
-            "scheduled_at"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "presupuestos_n",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Presupuestos N",
       "enabled": true,
@@ -5758,50 +5052,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "presupuestos_n_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Presupuestos N Items",
       "enabled": true,
@@ -5872,39 +5127,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_presupuesto_n_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "presupuesto_n_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "quote_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Quote Items",
       "enabled": true,
@@ -5966,12 +5193,7 @@
     },
     {
       "$id": "quotes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Quotes",
       "enabled": true,
@@ -6075,61 +5297,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "role_permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Role Permissions",
       "enabled": true,
@@ -6163,39 +5335,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_role_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "role_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_permission_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "permission_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "roles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Roles",
       "enabled": true,
@@ -6245,12 +5389,7 @@
     },
     {
       "$id": "sale_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Sale Items",
       "enabled": true,
@@ -6315,28 +5454,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_sale_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "sale_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "sales",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Sales",
       "enabled": true,
@@ -6465,50 +5587,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_created_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "created_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_ticket_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "ticket_number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "superusers",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Superusers",
       "enabled": true,
@@ -6567,39 +5650,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "suppliers",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Suppliers",
       "enabled": true,
@@ -6717,39 +5772,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "system_settings",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "System Settings",
       "enabled": true,
@@ -6809,39 +5836,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_setting_key",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "setting_key"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_appearance_preferences",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Appearance Preferences",
       "enabled": true,
@@ -6881,28 +5880,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_company_roles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Company Roles",
       "enabled": true,
@@ -6949,50 +5931,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_role_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "role_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Permissions",
       "enabled": true,
@@ -7033,50 +5976,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_permission_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "permission_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_certificates",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Certificates",
       "enabled": true,
@@ -7148,39 +6052,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_company_config",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Company Config",
       "enabled": true,
@@ -7275,28 +6151,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Logs",
       "enabled": true,
@@ -7365,39 +6224,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_created_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "created_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_queue",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Queue",
       "enabled": true,
@@ -7493,74 +6324,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id",
-            "status"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_next_retry",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "next_retry_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_xml_documents",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Xml Documents",
       "enabled": true,
@@ -7615,30 +6383,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     }
   ]
 }

@@ -187,12 +187,7 @@
   "tables": [
     {
       "$id": "empresas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Empresas",
       "enabled": true,
@@ -285,12 +280,7 @@
     },
     {
       "$id": "clientes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Clientes",
       "enabled": true,
@@ -431,8 +421,7 @@
             "Otro"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "edad",
@@ -554,12 +543,7 @@
     },
     {
       "$id": "configuracion",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Configuracion",
       "enabled": true,
@@ -823,12 +807,7 @@
     },
     {
       "$id": "empleados",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Empleados",
       "enabled": true,
@@ -892,8 +871,7 @@
             "Esteticista"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "activo",
@@ -946,39 +924,11 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "familias",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Familias",
       "enabled": true,
@@ -1037,12 +987,7 @@
     },
     {
       "$id": "articulos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Articulos",
       "enabled": true,
@@ -1086,8 +1031,7 @@
             "bono"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "familia_id",
@@ -1167,12 +1111,7 @@
     },
     {
       "$id": "citas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Citas",
       "enabled": true,
@@ -1253,8 +1192,7 @@
             "no_asistio"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "comentarios",
@@ -1320,12 +1258,7 @@
     },
     {
       "$id": "facturas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Facturas",
       "enabled": true,
@@ -1371,8 +1304,7 @@
             "anulada"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "cliente_id",
@@ -1467,8 +1399,7 @@
             "bizum"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "notas",
@@ -1525,12 +1456,7 @@
     },
     {
       "$id": "bonos_cliente",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "bonos_cliente",
       "enabled": true,
@@ -1688,12 +1614,7 @@
     },
     {
       "$id": "recursos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Recursos",
       "enabled": true,
@@ -1720,8 +1641,7 @@
             "otro"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "descripcion",
@@ -1751,7 +1671,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_recursos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1774,12 +1694,7 @@
     },
     {
       "$id": "proveedores",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Proveedores",
       "enabled": true,
@@ -1885,7 +1800,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_proveedores_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -1908,12 +1823,7 @@
     },
     {
       "$id": "aparatos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Aparatos",
       "enabled": true,
@@ -1999,7 +1909,7 @@
       ],
       "indexes": [
         {
-          "key": "idx_nombre",
+          "key": "idx_aparatos_nombre",
           "type": "key",
           "status": "available",
           "columns": [
@@ -2022,12 +1932,7 @@
     },
     {
       "$id": "plantillas_documentos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "plantillas_documentos",
       "enabled": true,
@@ -2057,8 +1962,7 @@
             "otro"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "descripcion",
@@ -2199,12 +2103,7 @@
     },
     {
       "$id": "auditoria",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "auditoria",
       "enabled": true,
@@ -2352,12 +2251,7 @@
     },
     {
       "$id": "notificaciones",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "notificaciones",
       "enabled": true,
@@ -2380,8 +2274,7 @@
             "documento_pendiente"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "prioridad",
@@ -2394,8 +2287,7 @@
             "baja"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "referencia_tipo",
@@ -2410,8 +2302,7 @@
             "sesion"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "titulo",
@@ -2525,12 +2416,7 @@
     },
     {
       "$id": "message_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Message_Logs",
       "enabled": true,
@@ -2585,8 +2471,7 @@
             "read"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "error_message",
@@ -2631,12 +2516,7 @@
     },
     {
       "$id": "templates",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Templates",
       "enabled": true,
@@ -2665,12 +2545,7 @@
     },
     {
       "$id": "campaigns",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Campaigns",
       "enabled": true,
@@ -2699,8 +2574,7 @@
             "cancelled"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "template_id",
@@ -2788,12 +2662,7 @@
     },
     {
       "$id": "import_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Import_Logs",
       "enabled": true,
@@ -2829,8 +2698,7 @@
             "failed"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "total_rows",
@@ -2919,12 +2787,7 @@
     },
     {
       "$id": "campaign_progress",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Campaign_Progress",
       "enabled": true,
@@ -2960,8 +2823,7 @@
             "skipped"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "attempts",
@@ -3015,12 +2877,7 @@
     },
     {
       "$id": "sesiones_clinicas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "sesiones_clinicas",
       "enabled": true,
@@ -3187,12 +3044,7 @@
     },
     {
       "$id": "permisos",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "permisos",
       "enabled": true,
@@ -3317,8 +3169,7 @@
             "Lectura"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "empresa_id",
@@ -3346,12 +3197,7 @@
     },
     {
       "$id": "usuario_empresas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "usuario_empresas",
       "enabled": true,
@@ -3386,8 +3232,7 @@
             "administrador"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         },
         {
           "key": "activo",
@@ -3406,39 +3251,11 @@
           "encrypt": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_empresa_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "empresa_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "migration_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Migration Logs",
       "enabled": true,
@@ -3527,54 +3344,14 @@
             "failed"
           ],
           "format": "enum",
-          "default": null,
-          "size": 255
+          "default": null
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_started_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "started_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_completed_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "completed_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status2",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status2"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_appointments",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Agenda Appointments",
       "enabled": true,
@@ -3584,43 +3361,37 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "employee_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "client_name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "start_time",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "end_time",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "appointment_date",
@@ -3632,22 +3403,19 @@
           "key": "color",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -3662,61 +3430,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_employee_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "employee_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_appointment_date",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "appointment_date"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_start_time",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "start_time"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "agenda_employees",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Agenda Employees",
       "enabled": true,
@@ -3726,29 +3444,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "color",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_active",
@@ -3769,39 +3483,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_families",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Article Families",
       "enabled": true,
@@ -3811,29 +3497,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -3848,28 +3530,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "article_variations",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Article Variations",
       "enabled": true,
@@ -3879,59 +3544,49 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "article_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "talla",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "color",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "stock_actual",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "precio",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "codigo_barras",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "estado",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -3946,74 +3601,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_talla_color",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "talla",
-            "color"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_codigo_barras",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "codigo_barras"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_estado",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "estado"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_precio",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "precio"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "articles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Articles",
       "enabled": true,
@@ -4023,95 +3615,79 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "codigo",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "descripcion",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "descripcion_larga",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "familia",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "precio",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "stock_actual",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "stock_minimo",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "codigo_barras",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "codigo_serie",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "foto_url",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "estado",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4130,12 +3706,7 @@
     },
     {
       "$id": "colors",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Colors",
       "enabled": true,
@@ -4145,15 +3716,13 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4162,28 +3731,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "customer_contacts",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Customer Contacts",
       "enabled": true,
@@ -4193,43 +3745,37 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "contact_name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "contact_email",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "contact_phone",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "observations",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_primary",
@@ -4250,39 +3796,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_primary",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_primary"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "customer_shipping_addresses",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Customer Shipping Addresses",
       "enabled": true,
@@ -4292,57 +3810,49 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_street",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_city",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_state",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_postal_code",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_country",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_default",
@@ -4363,39 +3873,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_default",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_default"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "delivery_note_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Delivery Note Items",
       "enabled": true,
@@ -4405,30 +3887,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "delivery_note_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "quantity",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "created_at",
@@ -4441,12 +3918,7 @@
     },
     {
       "$id": "delivery_notes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Delivery Notes",
       "enabled": true,
@@ -4456,29 +3928,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "number",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "issue_date",
@@ -4496,15 +3964,13 @@
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "notes",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4519,50 +3985,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "document_categories",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Document Categories",
       "enabled": true,
@@ -4572,22 +3999,19 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4602,28 +4026,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "documents",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Documents",
       "enabled": true,
@@ -4633,72 +4040,61 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "original_name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "file_path",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "file_size",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "mime_type",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "category",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "tags",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "uploaded_by",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4713,50 +4109,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_uploaded_by",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "uploaded_by"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_category",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "category"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Permissions",
       "enabled": true,
@@ -4766,36 +4123,31 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "resource",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "action",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -4804,39 +4156,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_resource",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "resource"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_action",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "action"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "planilla_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Planilla Items",
       "enabled": true,
@@ -4846,299 +4170,229 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "planilla_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "articulo",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "color",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "precio",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "descripcion",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
-          "key": "guionguion",
+          "key": "--",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "talla_16",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_17",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_18",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_19",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_20",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_21",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_22",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_23",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_24",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_25",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_26",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_27",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_28",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_29",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_30",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_31",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_32",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_33",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_34",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_35",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_36",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_37",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_38",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_39",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_40",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_41",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_42",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_43",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_44",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_45",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "talla_46",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "created_at",
@@ -5153,28 +4407,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_planilla_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "planilla_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "planillas",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Planillas",
       "enabled": true,
@@ -5184,15 +4421,13 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "codigo",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "fecha",
@@ -5204,22 +4439,19 @@
           "key": "supplier_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "estado",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -5234,39 +4466,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_codigo",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "codigo"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_configurations",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Configurations",
       "enabled": true,
@@ -5276,36 +4480,31 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "api_url",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "api_key",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "webhook_secret",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_active",
@@ -5317,9 +4516,7 @@
           "key": "sync_frequency",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "last_sync_at",
@@ -5340,28 +4537,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_product_mappings",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Product Mappings",
       "enabled": true,
@@ -5371,43 +4551,37 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "article_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "variation_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "prestashop_product_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "prestashop_combination_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "sync_enabled",
@@ -5428,39 +4602,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_sync_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Sync Logs",
       "enabled": true,
@@ -5470,50 +4616,43 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "sync_type",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "direction",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "message",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "details",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "processed_at",
@@ -5522,28 +4661,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "prestashop_sync_queue",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Prestashop Sync Queue",
       "enabled": true,
@@ -5553,60 +4675,49 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "sync_type",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "payload",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "priority",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "attempts",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "max_attempts",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "scheduled_at",
@@ -5627,41 +4738,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status",
-            "scheduled_at"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "presupuestos_n",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Presupuestos N",
       "enabled": true,
@@ -5671,29 +4752,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "number",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "issue_date",
@@ -5711,39 +4788,31 @@
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "subtotal",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "tax_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "total_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "notes",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -5758,50 +4827,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "presupuestos_n_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Presupuestos N Items",
       "enabled": true,
@@ -5811,53 +4841,43 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "presupuesto_n_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "article_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "quantity",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "unit_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "total_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "created_at",
@@ -5872,39 +4892,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_presupuesto_n_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "presupuesto_n_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_article_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "article_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "quote_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Quote Items",
       "enabled": true,
@@ -5914,46 +4906,37 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "quote_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "quantity",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "unit_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "total_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "created_at",
@@ -5966,12 +4949,7 @@
     },
     {
       "$id": "quotes",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Quotes",
       "enabled": true,
@@ -5981,29 +4959,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "number",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "issue_date",
@@ -6021,46 +4995,37 @@
           "key": "subtotal",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "tax_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "total_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "notes",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "currency",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6075,61 +5040,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_customer_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "customer_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "role_permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Role Permissions",
       "enabled": true,
@@ -6139,22 +5054,19 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "role_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "permission_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6163,39 +5075,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_role_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "role_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_permission_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "permission_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "roles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Roles",
       "enabled": true,
@@ -6205,22 +5089,19 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_system_role",
@@ -6245,12 +5126,7 @@
     },
     {
       "$id": "sale_items",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Sale Items",
       "enabled": true,
@@ -6260,53 +5136,43 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "sale_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "article_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "description",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "quantity",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "unit_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "total_price",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "created_at",
@@ -6315,28 +5181,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_sale_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "sale_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "sales",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Sales",
       "enabled": true,
@@ -6346,111 +5195,91 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "ticket_number",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_name",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_email",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "customer_phone",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "total_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "tax_amount",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "subtotal",
           "type": "double",
           "required": true,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "payment_method",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "amount_paid",
           "type": "double",
           "required": false,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "change_amount",
           "type": "double",
           "required": false,
-          "array": false,
-          "min": -1.7976931348623157e+308,
-          "max": 1.7976931348623157e+308
+          "array": false
         },
         {
           "key": "currency",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "notes",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6465,50 +5294,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_created_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "created_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_ticket_number",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "ticket_number"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "status"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "superusers",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Superusers",
       "enabled": true,
@@ -6518,29 +5308,25 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "email",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "password_hash",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "salt",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_active",
@@ -6567,39 +5353,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_email",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "email"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "suppliers",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Suppliers",
       "enabled": true,
@@ -6609,100 +5367,85 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "tax_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "email",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "phone",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_street",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_city",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_state",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_postal_code",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "address_country",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "contact_person",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "payment_terms",
           "type": "integer",
           "required": false,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "notes",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6717,39 +5460,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_name",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "name"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "system_settings",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "System Settings",
       "enabled": true,
@@ -6759,29 +5474,25 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "setting_key",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "setting_value",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "setting_type",
@@ -6793,8 +5504,7 @@
           "key": "description",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6809,39 +5519,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_setting_key",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "setting_key"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_appearance_preferences",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Appearance Preferences",
       "enabled": true,
@@ -6851,15 +5533,13 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "user_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "sidebar_color",
@@ -6881,28 +5561,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_company_roles",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Company Roles",
       "enabled": true,
@@ -6912,29 +5575,25 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "user_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "role_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -6949,50 +5608,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_role_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "role_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "user_permissions",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "User Permissions",
       "enabled": true,
@@ -7002,29 +5622,25 @@
           "key": "id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "user_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "permission_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -7033,50 +5649,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_user_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "user_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_permission_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "permission_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_certificates",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Certificates",
       "enabled": true,
@@ -7086,36 +5663,31 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "certificate_name",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "certificate_data",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "certificate_password",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "is_active",
@@ -7148,39 +5720,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_is_active",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "is_active"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_company_config",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Company Config",
       "enabled": true,
@@ -7190,71 +5734,61 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "environment",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "nif_emisor",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "nombre_razon",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "software_name",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "software_version",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "id_software",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "numero_instalacion",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "hash_anterior",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "auto_send",
@@ -7275,28 +5809,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_logs",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Logs",
       "enabled": true,
@@ -7306,57 +5823,49 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "invoice_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "action",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "request_data",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "response_data",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "error_message",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -7365,39 +5874,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_created_at",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "created_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_queue",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Queue",
       "enabled": true,
@@ -7407,52 +5888,43 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "invoice_id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "action",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "request_data",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "retry_count",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "max_retries",
           "type": "integer",
           "required": true,
-          "array": false,
-          "min": -9223372036854775808,
-          "max": 9223372036854775807
+          "array": false
         },
         {
           "key": "next_retry_at",
@@ -7464,15 +5936,13 @@
           "key": "status",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "error_message",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -7493,74 +5963,11 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_status",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id",
-            "status"
-          ],
-          "orders": [
-            "ASC",
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_next_retry",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "next_retry_at"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     },
     {
       "$id": "verifactu_xml_documents",
-      "$permissions": [
-        "create(\"users\")",
-        "read(\"users\")",
-        "update(\"users\")",
-        "delete(\"users\")"
-      ],
+      "$permissions": [],
       "databaseId": "mogesmar",
       "name": "Verifactu Xml Documents",
       "enabled": true,
@@ -7570,43 +5977,37 @@
           "key": "id",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "company_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "invoice_id",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "xml_type",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "xml_content",
           "type": "string",
           "required": true,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "file_path",
           "type": "string",
           "required": false,
-          "array": false,
-          "size": 255
+          "array": false
         },
         {
           "key": "created_at",
@@ -7615,30 +6016,7 @@
           "array": false
         }
       ],
-      "indexes": [
-        {
-          "key": "idx_company_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "company_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        },
-        {
-          "key": "idx_invoice_id",
-          "type": "key",
-          "status": "available",
-          "columns": [
-            "invoice_id"
-          ],
-          "orders": [
-            "ASC"
-          ]
-        }
-      ]
+      "indexes": []
     }
   ]
 }

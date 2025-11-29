@@ -4126,7 +4126,41 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_talla",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "talla"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_color",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "color"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_tipo_producto",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "tipo_producto"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "colors",
@@ -4437,7 +4471,19 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "delivery_notes",
@@ -5962,7 +6008,19 @@
           "array": false
         }
       ],
-      "indexes": []
+      "indexes": [
+        {
+          "key": "idx_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        }
+      ]
     },
     {
       "$id": "quotes",
@@ -6322,6 +6380,17 @@
           "status": "available",
           "columns": [
             "sale_id"
+          ],
+          "orders": [
+            "ASC"
+          ]
+        },
+        {
+          "key": "idx_variation_id",
+          "type": "key",
+          "status": "available",
+          "columns": [
+            "variation_id"
           ],
           "orders": [
             "ASC"

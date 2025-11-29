@@ -57,7 +57,8 @@ def main():
 
     endpoint = args.endpoint.rstrip('/')
     api_key = args.apikey
-    project_id = args.project
+    # Prefer explicit --project argument. Si no está, intenta leer projectId del archivo de configuración
+    project_id = args.project or conf.get('projectId', '')
 
     cmds = []
     summary = {'databases': []}
@@ -105,6 +106,14 @@ def main():
             # indexes - Appwrite doesn't provide a direct REST for indexes in DB v1; we'll skip or document the indexes in the summary
             if col.get('indexes'):
                 summary['databases'][-1]['collections'][-1]['indexes'] = col.get('indexes')
+
+    # Validación: evitar generar un script roto si faltan credenciales o project id
+    if not api_key or api_key == 'REPLACE_WITH_KEY':
+        print('ERROR: API key no proporcionada o sigue como REPLACE_WITH_KEY. Cancelando generación.')
+        return
+    if not project_id:
+        print('ERROR: project id no encontrado. Pasa --project o añade "projectId" en el archivo de configuración. Cancelando generación.')
+        return
 
     # write shell script
     out_sh = Path('apply_appwrite.sh')
