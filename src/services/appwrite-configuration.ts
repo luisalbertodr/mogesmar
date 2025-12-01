@@ -1,12 +1,12 @@
 import { databases, DATABASE_ID, CONFIGURATION_COLLECTION_ID } from '@/lib/appwrite';
 import { Configuracion, HorarioApertura } from '@/types';
-import { Query, Models } from 'appwrite';
+import { Query, Models, ID } from 'appwrite';
 
 // Definimos el tipo de Input (basado en el setup)
 export type UpdateConfigurationInput = Partial<{
   nombreClinica: string;
   direccion: string;
-  cif2: string;
+  nif: string;
   emailContacto: string;
   telefonoContacto: string;
   serieFactura: string;
@@ -15,10 +15,12 @@ export type UpdateConfigurationInput = Partial<{
   ultimoNumeroPresupuesto: number;
   tipoIvaPredeterminado: number;
   horarios: HorarioApertura[];
+  empresa_id: string; // Aseguramos que empresa_id esté en el tipo
 }>;
 
 // Obtener la configuración de una empresa específica
-export const getConfiguration = async (empresaId: string): Promise<Configuracion & Models.Document> => {
+// CAMBIO: Ahora promete devolver el documento O null, no lanza error si no existe.
+export const getConfiguration = async (empresaId: string): Promise<(Configuracion & Models.Document) | null> => {
   try {
     // Buscar la configuración por empresa_id
     const response = await databases.listDocuments<Configuracion & Models.Document>(
@@ -44,14 +46,30 @@ export const getConfiguration = async (empresaId: string): Promise<Configuracion
         return doc;
     }
     
-    // No lanzar error, simplemente retornar null o crear configuración por defecto
-    // El componente deberá manejar la ausencia de configuración
-    console.warn(`No se encontró configuración para la empresa ${empresaId}. Se creará una configuración por defecto.`);
-    throw new Error(`No se encontró configuración para la empresa ${empresaId}`);
+    // CAMBIO CRÍTICO: No lanzar error. Retornar null para que la app sepa que falta la config
+    // y pueda redirigir o crear una nueva.
+    console.warn(`No se encontró configuración para la empresa ${empresaId}. Retornando null.`);
+    return null; 
   } catch (error) {
      console.error('Error al obtener configuración:', error);
      throw error;
   }
+};
+
+// Crear una nueva configuración
+export const createConfiguration = (data: any) => {
+  const dataToSend = { ...data };
+  // Serializar horarios si es necesario
+  if (dataToSend.horarios && typeof dataToSend.horarios !== 'string') {
+      dataToSend.horarios = JSON.stringify(dataToSend.horarios);
+  }
+
+  return databases.createDocument<Configuracion & Models.Document>(
+      DATABASE_ID,
+      CONFIGURATION_COLLECTION_ID,
+      ID.unique(),
+      dataToSend
+  );
 };
 
 // Actualizar la configuración

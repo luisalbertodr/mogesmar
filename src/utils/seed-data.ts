@@ -46,7 +46,7 @@ export async function seedData() {
             const nuevaEmpresa = await databases.createDocument(DATABASE_ID, EMPRESAS_COLLECTION_ID, ID.unique(), {
                 nombre: EMPRESA_NOMBRE,
                 nombre_legal: EMPRESA_NOMBRE + ' S.L.',
-                cif2: 'B12345678',
+                nif: 'B12345678',
                 activa: true,
                 configuracion_id: configId
             });
@@ -56,6 +56,7 @@ export async function seedData() {
             await databases.createDocument(DATABASE_ID, CONFIGURATION_COLLECTION_ID, configId, {
                 empresa_id: empresaId,
                 nombreClinica: EMPRESA_NOMBRE,
+                nif: 'B12345678',
                 serieFactura: 'FRA',
                 seriePresupuesto: 'PRE',
                 ultimoNumeroFactura: 0,

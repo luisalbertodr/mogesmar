@@ -18,7 +18,7 @@ interface ProveedorFormProps {
 
 const defaultValues: ProveedorFormData = {
   nombre: '',
-  cif2: '',
+  nif: '',
   telefono: '',
   email: '',
   direccion: '',
@@ -34,7 +34,7 @@ export const ProveedorForm = ({ proveedorInicial, onSubmit, isSubmitting }: Prov
     if (!proveedorInicial) return defaultValues;
     return {
       nombre: proveedorInicial.nombre || '',
-      cif2: proveedorInicial.cif2 || '',
+      nif: proveedorInicial.nif || '',
       telefono: proveedorInicial.telefono || '',
       email: proveedorInicial.email || '',
       direccion: proveedorInicial.direccion || '',
@@ -54,7 +54,7 @@ export const ProveedorForm = ({ proveedorInicial, onSubmit, isSubmitting }: Prov
   const handleSubmit = async (data: ProveedorFormData) => {
     const finalData: LipooutUserInput<Omit<Proveedor, keyof Models.Document>> = {
       ...data,
-      cif2: data.cif2 || undefined,
+      nif: data.nif || undefined,
       telefono: data.telefono || undefined,
       email: data.email || undefined,
       direccion: data.direccion || undefined,
@@ -88,7 +88,7 @@ export const ProveedorForm = ({ proveedorInicial, onSubmit, isSubmitting }: Prov
 
             <FormField 
               control={form.control} 
-              name="cif2" 
+              name="nif" 
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>CIF/NIF</FormLabel>

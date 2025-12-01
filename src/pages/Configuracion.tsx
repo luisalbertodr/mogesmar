@@ -218,7 +218,7 @@ const Configuracion = () => {
                 empresa_id: clinicConfig.empresa_id,
                 nombreClinica: data.nombreClinica,
                 direccion: data.direccion ?? clinicConfig.direccion ?? '',
-                cif2: data.cif2,
+                nif: data.nif,
                 emailContacto: data.emailContacto ?? clinicConfig.emailContacto ?? '',
                 telefonoContacto: data.telefonoContacto ?? clinicConfig.telefonoContacto ?? '',
                 serieFactura: data.serieFactura,
@@ -264,7 +264,7 @@ const Configuracion = () => {
           // Incluir empresa_id al guardar
           empresa_id: clinicConfig.empresa_id,
           nombreClinica: String(clinicConfig.nombreClinica || '').trim(),
-          cif2: String(clinicConfig.cif2 || '').trim(),
+          nif: String(clinicConfig.nif || '').trim(),
           serieFactura: String(clinicConfig.serieFactura || '').trim(),
           seriePresupuesto: String(clinicConfig.seriePresupuesto || '').trim(),
           direccion: String(clinicConfig.direccion || '').trim(),
@@ -666,7 +666,7 @@ const Configuracion = () => {
                     {proveedores && proveedores.length > 0 ? proveedores.map(prov => (
                       <TableRow key={prov.$id}>
                         <TableCell className="font-medium">{prov.nombre}</TableCell>
-                        <TableCell>{prov.cif2 || '-'}</TableCell>
+                        <TableCell>{prov.nif || '-'}</TableCell>
                         <TableCell>{prov.telefono || '-'}</TableCell>
                         <TableCell>{prov.email || '-'}</TableCell>
                         <TableCell>

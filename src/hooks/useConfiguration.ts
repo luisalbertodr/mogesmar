@@ -2,19 +2,21 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import {
   getConfiguration,
   updateConfiguration,
+  createConfiguration, // Importamos la nueva función
   UpdateConfigurationInput,
-} from '@/services/appwrite-configuration'; // Usa el servicio renombrado
+} from '@/services/appwrite-configuration'; 
 import { Configuracion } from '@/types';
 import { Models } from 'appwrite';
 import { useEmpresa } from '@/contexts/EmpresaContext';
 
-const CONFIGURATION_QUERY_KEY = 'configuration'; // Clave renombrada
+const CONFIGURATION_QUERY_KEY = 'configuration';
 
 // Hook para OBTENER la configuración
 export const useGetConfiguration = () => {
   const { empresaActiva } = useEmpresa();
   
-  return useQuery<Configuracion & Models.Document>({
+  // CAMBIO: El tipo de dato ahora puede ser null
+  return useQuery<(Configuracion & Models.Document) | null>({
     queryKey: [CONFIGURATION_QUERY_KEY, empresaActiva?.$id],
     queryFn: () => {
       if (!empresaActiva) throw new Error('No hay empresa activa');
@@ -23,6 +25,23 @@ export const useGetConfiguration = () => {
     enabled: !!empresaActiva,
     staleTime: 1000 * 60 * 60, // Cachear 1 hora
     retry: 1,
+  });
+};
+
+// Hook para CREAR la configuración
+export const useCreateConfiguration = () => {
+  const { empresaActiva } = useEmpresa();
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: (data: any) => {
+       return createConfiguration(data);
+    },
+    onSuccess: (data) => {
+      if (empresaActiva) {
+        queryClient.setQueryData([CONFIGURATION_QUERY_KEY, empresaActiva.$id], data);
+      }
+    }
   });
 };
 
@@ -44,7 +63,6 @@ export const useUpdateConfiguration = () => {
 };
 
 // Hook específico para obtener el SIGUIENTE NÚMERO DE DOCUMENTO
-// Esto es una mutación porque *actualiza* el contador en la DB
 export const useGenerarSiguienteNumero = () => {
     const { empresaActiva } = useEmpresa();
     const queryClient = useQueryClient();

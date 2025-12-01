@@ -86,9 +86,9 @@ export const EmpresaSelector: React.FC<EmpresaSelectorProps> = ({ open, onClose 
                         {empresa.nombre_legal}
                       </p>
                     )}
-                    {empresa.cif2 && (
+                    {empresa.nif && (
                       <p className="text-xs text-muted-foreground mt-1">
-                        CIF: {empresa.cif2}
+                        CIF: {empresa.nif}
                       </p>
                     )}
                   </div>

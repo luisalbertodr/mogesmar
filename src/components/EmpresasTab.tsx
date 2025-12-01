@@ -1,105 +1,148 @@
 import { useState } from 'react';
-import { Empresa, EmpresaInput } from '@/types';
+import { Empresa, EmpresaInput, Configuracion, LipooutUserInput } from '@/types';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
-import { Plus, Pencil, Trash2 } from 'lucide-react';
+import { Plus, Trash2, Settings2 } from 'lucide-react';
+import { Models } from 'appwrite';
 import { useToast } from '@/hooks/use-toast';
 import LoadingSpinner from '@/components/LoadingSpinner'; 
-import { EmpresaForm } from '@/components/forms/EmpresaForm'; 
-// --- CAMBIO: Importar el hook real ---
+import { EmpresaUnifiedForm, UnifiedFormData } from '@/components/forms/EmpresaUnifiedForm'; 
 import { useEmpresas } from '@/hooks/useEmpresas';
-
+// CORRECCIÓN: Importamos createConfiguration
+import { getConfiguration, updateConfiguration, createConfiguration } from '@/services/appwrite-configuration'; 
+import { storage, CONFIG_BUCKET_ID } from '@/lib/appwrite'; 
 
 export const EmpresasTab = () => {
     const { toast } = useToast();
-    // --- CAMBIO: Usar el hook real de Appwrite ---
-    const { 
-        empresas, 
-        isLoading, 
-        createEmpresa, 
-        updateEmpresa, 
-        deleteEmpresa,
-        error 
-    } = useEmpresas(); 
+    const { empresas, isLoading, createEmpresa, updateEmpresa, deleteEmpresa, error } = useEmpresas(); 
 
     const [sheetOpen, setSheetOpen] = useState(false);
     const [empresaEditing, setEmpresaEditing] = useState<Empresa | null>(null);
+    const [configEditing, setConfigEditing] = useState<Configuracion & Models.Document | null>(null);
+    const [isLoadingConfig, setIsLoadingConfig] = useState(false);
 
     const handleNuevo = () => {
         setEmpresaEditing(null);
+        setConfigEditing(null);
         setSheetOpen(true);
     };
 
-    const handleEditar = (empresa: Empresa) => {
+    // Al editar, obtenemos la empresa Y su configuración
+    const handleEditar = async (empresa: Empresa) => {
         setEmpresaEditing(empresa);
         setSheetOpen(true);
+        setIsLoadingConfig(true);
+        try {
+            // Buscamos la configuración de esta empresa específica
+            const config = await getConfiguration(empresa.$id);
+            setConfigEditing(config); // Será null si no existe, y el formulario lo manejará
+        } catch (e) {
+            console.error("Error cargando config de empresa", e);
+            setConfigEditing(null);
+        } finally {
+            setIsLoadingConfig(false);
+        }
     };
 
-    const handleSave = async (data: EmpresaInput) => {
+    // Subida de Logo (Pasada al formulario)
+    const handleUploadLogo = async (file: File): Promise<string> => {
+        if (!CONFIG_BUCKET_ID) throw new Error("Bucket ID no configurado");
+        const result = await storage.createFile(CONFIG_BUCKET_ID, 'unique()', file);
+        return result.$id;
+    };
+
+    const handleSave = async (data: UnifiedFormData) => {
         try {
+            let empresaId = empresaEditing?.$id;
+
+            // 1. Guardar/Crear Datos de la Empresa (Base)
+            const empresaData: EmpresaInput = {
+                nombre: data.nombre,
+                nombre_legal: data.nombre_legal,
+                nif: data.nif,
+                telefono: data.telefono || undefined,
+                email: data.email || undefined,
+                activa: data.activa
+            };
+
             if (empresaEditing) {
-                await updateEmpresa({ id: empresaEditing.$id, data });
-                toast({ title: "Empresa actualizada", description: `Los datos de ${data.nombre} han sido guardados.` });
+                await updateEmpresa({ id: empresaEditing.$id, data: empresaData });
             } else {
-                await createEmpresa(data);
-                toast({ 
-                    title: "Empresa creada", 
-                    description: `El nuevo centro ${data.nombre} ha sido registrado y asignado a tu cuenta.` 
-                });
+                // Nota: Si createEmpresa no devuelve el ID, este flujo para nuevas empresas
+                // podría requerir que el usuario edite de nuevo para añadir la configuración.
+                // Asumimos por ahora que es para edición o que el hook maneja la recarga.
+                await createEmpresa(empresaData);
+                toast({ title: "Empresa creada", description: "La empresa ha sido registrada." });
+                setSheetOpen(false);
+                window.location.reload();
+                return; 
             }
+
+            // 2. Guardar/Actualizar Configuración (Solo si estamos editando y tenemos ID)
+            if (empresaId) {
+                const configData: LipooutUserInput<Configuracion> = {
+                    empresa_id: empresaId,
+                    nombreClinica: data.nombre, 
+                    direccion: data.direccion || '',
+                    nif: data.nif,
+                    emailContacto: data.emailContacto || '',
+                    telefonoContacto: data.telefonoContacto || '',
+                    serieFactura: data.serieFactura,
+                    seriePresupuesto: data.seriePresupuesto,
+                    tipoIvaPredeterminado: data.tipoIvaPredeterminado,
+                    logoUrl: data.logoUrl,
+                    logoText: data.logoText,
+                    hideLogoText: data.hideLogoText,
+                    horarios: data.horarios ? data.horarios : undefined,
+                    // Mantenemos contadores si existen
+                    ultimoNumeroFactura: configEditing?.ultimoNumeroFactura || 0,
+                    ultimoNumeroPresupuesto: configEditing?.ultimoNumeroPresupuesto || 0,
+                };
+
+                if (configEditing?.$id) {
+                    // Actualizar existente
+                    await updateConfiguration(empresaId, configEditing.$id, configData);
+                } else {
+                    // CORRECCIÓN: Crear nueva configuración si no existía
+                    await createConfiguration(configData);
+                }
+            }
+
+            toast({ title: "Datos guardados", description: "La empresa y su configuración han sido actualizadas." });
             setSheetOpen(false);
-            // Recargar la lista de empresas
-            window.location.reload(); // Recargar para actualizar el contexto
+            window.location.reload(); 
+
         } catch (err) {
-            const errorMessage = err instanceof Error ? err.message : 'Error desconocido';
-            toast({ title: "Error", description: errorMessage, variant: "destructive" });
-            console.error('Error al guardar empresa:', err);
+            console.error(err);
+            toast({ title: "Error", description: (err as Error).message, variant: "destructive" });
         }
     };
 
     const handleDelete = async (id: string) => {
-        if (!confirm('ADVERTENCIA: Eliminar una empresa es irreversible y eliminará o desactivará todos sus datos asociados (clientes, citas, facturas, etc.). ¿Estás seguro?')) {
-            return;
-        }
+        if (!confirm('¿Estás seguro de eliminar esta empresa y todos sus datos?')) return;
         try {
             await deleteEmpresa(id);
             toast({ title: "Empresa eliminada", variant: "destructive" });
         } catch (err) {
-            toast({ title: "Error al eliminar", description: (err as Error).message, variant: "destructive" });
+            toast({ title: "Error", description: (err as Error).message, variant: "destructive" });
         }
     };
 
-    if (isLoading) {
-        return <LoadingSpinner />;
-    }
-    
-    // Manejo de errores
-    if (error) {
-         return (
-             <Card className="border-destructive">
-                 <CardHeader>
-                     <CardTitle className="text-destructive">Error al Cargar Empresas</CardTitle>
-                 </CardHeader>
-                 <CardContent>
-                     <p>No se pudo conectar con el servicio de Appwrite o hay un error de permisos.</p>
-                     <p className="text-sm text-muted-foreground mt-2">Detalle: {(error as Error).message}</p>
-                 </CardContent>
-             </Card>
-         );
-    }
+    if (isLoading) return <LoadingSpinner />;
+    if (error) return <p className="text-destructive">Error: {(error as Error).message}</p>;
 
     return (
         <>
             <Card>
                 <CardHeader className="flex flex-row items-center justify-between">
                     <div>
-                        <CardTitle>Gestión de Centros/Empresas</CardTitle>
-                        <CardDescription>Configura y administra los diferentes centros de tu red. Solo visible para administradores.</CardDescription>
+                        <CardTitle>Centros y Configuración</CardTitle>
+                        <CardDescription>Gestiona las empresas y su configuración individual.</CardDescription>
                     </div>
-                    <Button onClick={handleNuevo}><Plus className="w-4 h-4 mr-2"/> Nueva Empresa</Button>
+                    <Button onClick={handleNuevo}><Plus className="w-4 h-4 mr-2"/> Nuevo Centro</Button>
                 </CardHeader>
                 <CardContent>
                     <Table>
@@ -108,45 +151,46 @@ export const EmpresasTab = () => {
                                 <TableHead>Nombre</TableHead>
                                 <TableHead>CIF</TableHead>
                                 <TableHead>Estado</TableHead>
-                                <TableHead className="text-right">Acciones</TableHead>
+                                <TableHead className="text-right">Ajustes</TableHead>
                             </TableRow>
                         </TableHeader>
                         <TableBody>
-                            {empresas.length > 0 ? empresas.map(emp => (
+                            {empresas.map(emp => (
                                 <TableRow key={emp.$id}>
                                     <TableCell className="font-medium">{emp.nombre}</TableCell>
-                                    <TableCell>{emp.cif2}</TableCell>
-                                    <TableCell>
-                                        <Badge variant={emp.activa ? 'default' : 'secondary'}>
-                                            {emp.activa ? 'Activa' : 'Inactiva'}
-                                        </Badge>
-                                    </TableCell>
+                                    <TableCell>{emp.nif}</TableCell>
+                                    <TableCell><Badge variant={emp.activa ? 'default' : 'secondary'}>{emp.activa ? 'Activo' : 'Inactivo'}</Badge></TableCell>
                                     <TableCell className="text-right">
-                                        <Button variant="ghost" size="sm" onClick={() => handleEditar(emp)}><Pencil className="w-4 h-4"/></Button>
-                                        <Button variant="ghost" size="sm" onClick={() => handleDelete(emp.$id)}><Trash2 className="w-4 h-4"/></Button>
+                                        <Button variant="outline" size="sm" onClick={() => handleEditar(emp)} className="mr-2">
+                                            <Settings2 className="w-4 h-4 mr-2"/> Configurar
+                                        </Button>
+                                        <Button variant="ghost" size="sm" onClick={() => handleDelete(emp.$id)}>
+                                            <Trash2 className="w-4 h-4 text-destructive"/>
+                                        </Button>
                                     </TableCell>
                                 </TableRow>
-                            )) : (
-                                <TableRow>
-                                    <TableCell colSpan={4} className="text-center text-muted-foreground">No hay empresas registradas.</TableCell>
-                                </TableRow>
-                            )}
+                            ))}
                         </TableBody>
                     </Table>
                 </CardContent>
             </Card>
             
-            {/* Sheet para crear/editar empresa */}
             <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-                <SheetContent className="sm:max-w-[600px] overflow-y-auto">
+                <SheetContent className="sm:max-w-[700px] overflow-y-auto">
                     <SheetHeader>
-                        <SheetTitle>{empresaEditing ? 'Editar Empresa' : 'Nueva Empresa'}</SheetTitle>
+                        <SheetTitle>{empresaEditing ? `Configurar: ${empresaEditing.nombre}` : 'Nueva Empresa'}</SheetTitle>
                     </SheetHeader>
-                    <EmpresaForm
-                        empresaInicial={empresaEditing}
-                        onSubmit={handleSave}
-                        isSubmitting={isLoading}
-                    />
+                    {isLoadingConfig ? (
+                        <div className="py-10 flex justify-center"><LoadingSpinner /></div>
+                    ) : (
+                        <EmpresaUnifiedForm
+                            empresaInicial={empresaEditing}
+                            configInicial={configEditing}
+                            onSubmit={handleSave}
+                            onLogoUpload={handleUploadLogo}
+                            isSubmitting={isLoading}
+                        />
+                    )}
                 </SheetContent>
             </Sheet>
         </>
